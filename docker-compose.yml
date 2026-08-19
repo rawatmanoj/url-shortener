@@ -45,6 +45,7 @@ services:
     - pgbouncer
    volumes:
     - .:/app
+   command: ["echo", "Alembic container - use docker compose run to execute migrations"]
 
 volumes:
   url-shortener-postgres-data:
